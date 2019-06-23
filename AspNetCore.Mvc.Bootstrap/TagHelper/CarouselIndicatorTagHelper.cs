@@ -20,13 +20,13 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public bool CarouselIndicatorActive { get; set; }
 
         [HtmlAttributeName("class")]
-        public string CarouselIndicatorClass { get; set; } = "";
+        public string CarouselIndicatorClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("slide-to")]
         public string CarouselIndicatorSlideTo { get; set; } = "0";
 
         [HtmlAttributeName("target")]
-        public string CarouselIndicatorTarget { get; set; } = "";
+        public string CarouselIndicatorTarget { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

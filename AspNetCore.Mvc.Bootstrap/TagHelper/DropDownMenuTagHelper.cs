@@ -17,10 +17,10 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class DropDownMenuTagHelper : TagHelper
     {
         [HtmlAttributeName("labelledby")]
-        public string LabelledById { get; set; } = "";
+        public string LabelledById { get; set; }=  string.Empty;
 
         [HtmlAttributeName("class")]
-        public string DropDownMenuClass { get; set; } = "";
+        public string DropDownMenuClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

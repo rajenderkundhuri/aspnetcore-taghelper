@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class JumbotronTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string JumbotronClass { get; set; } = "";
+        public string JumbotronClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

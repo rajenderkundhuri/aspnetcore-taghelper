@@ -30,22 +30,22 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class PopoverTagHelper : TagHelper
     {
         [HtmlAttributeName("bs-popover")]
-        public string PopoverTitle { get; set; } = "";
+        public string PopoverTitle { get; set; }=  string.Empty;
 
         [HtmlAttributeName("id")]
-        public string PopoverId { get; set; } = "";
+        public string PopoverId { get; set; }=  string.Empty;
 
         [HtmlAttributeName("static")]
         public bool PopoverStatic { get; set; }
 
         [HtmlAttributeName("placement")]
-        public string PopoverPlacement { get; set; } = "";
+        public string PopoverPlacement { get; set; }=  string.Empty;
 
         [HtmlAttributeName("title")]
-        public string PopoverTitle1 { get; set; } = "";
+        public string PopoverTitle1 { get; set; }=  string.Empty;
 
         [HtmlAttributeName("content")]
-        public string PopoverContent { get; set; } = "";
+        public string PopoverContent { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

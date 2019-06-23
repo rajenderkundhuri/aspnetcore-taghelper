@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class AlertCloseTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string AlertCloseClass { get; set; } = "";
+        public string AlertCloseClass { get; set; } = string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

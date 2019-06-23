@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ButtonGroupTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ButtonGroupClass { get; set; } = "";
+        public string ButtonGroupClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("orientation")]
         public string ButtonGroupOrientation { get; set; } = "horizontal";

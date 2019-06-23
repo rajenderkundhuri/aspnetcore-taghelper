@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ModalBodyTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ModalBodyClass { get; set; } = "";
+        public string ModalBodyClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

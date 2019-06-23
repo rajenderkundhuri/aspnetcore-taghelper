@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ProgressBarTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ProgressBarClass { get; set; } = "";
+        public string ProgressBarClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("value")]
         public string ProgressVal { get; set; } = "0";
@@ -29,12 +29,12 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public string ProgressValMax { get; set; } = "100";
 
         [HtmlAttributeName("minwidth")]
-        public string ProgressMinWidth { get; set; } = "";
+        public string ProgressMinWidth { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             string content = (await output.GetChildContentAsync()).GetContent();
-            string str = "";
+            string str=  string.Empty;
             if (this.ProgressMinWidth.Length > 0)
                 str = "min-width: " + this.ProgressMinWidth + ";";
             output.Content.AppendHtml(content);

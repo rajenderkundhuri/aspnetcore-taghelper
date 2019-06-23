@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ButtonToolbarTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ButtonToolbarClass { get; set; } = "";
+        public string ButtonToolbarClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

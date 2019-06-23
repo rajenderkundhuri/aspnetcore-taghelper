@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class NavItemTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string NavItemClass { get; set; } = "";
+        public string NavItemClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

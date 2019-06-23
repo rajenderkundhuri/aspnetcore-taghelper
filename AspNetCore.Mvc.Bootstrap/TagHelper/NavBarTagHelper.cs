@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class NavBarTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string NavBarClass { get; set; } = "";
+        public string NavBarClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("container")]
         public string NavBarContainer { get; set; } = "container";

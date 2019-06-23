@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class BreadcrumbTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string BreadcrumbClass { get; set; } = "";
+        public string BreadcrumbClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
