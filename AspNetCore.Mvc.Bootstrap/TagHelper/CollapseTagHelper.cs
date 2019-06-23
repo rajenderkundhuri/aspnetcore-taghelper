@@ -17,13 +17,13 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class CollapseTagHelper : TagHelper
     {
         [HtmlAttributeName("trigger")]
-        public string CollapseTrigger { get; set; } = "";
+        public string CollapseTrigger { get; set; }=  string.Empty;
 
         [HtmlAttributeName("id")]
-        public string CollapseId { get; set; } = "";
+        public string CollapseId { get; set; }=  string.Empty;
 
         [HtmlAttributeName("class")]
-        public string CollapseClass { get; set; } = "";
+        public string CollapseClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

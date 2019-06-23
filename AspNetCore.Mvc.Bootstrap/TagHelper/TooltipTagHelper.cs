@@ -30,10 +30,10 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class TooltipTagHelper : TagHelper
     {
         [HtmlAttributeName("bs-tooltip-toggle")]
-        public string TooltipToggle { get; set; } = "";
+        public string TooltipToggle { get; set; }=  string.Empty;
 
         [HtmlAttributeName("bs-tooltip")]
-        public string TooltipTitle { get; set; } = "";
+        public string TooltipTitle { get; set; }=  string.Empty;
 
         [HtmlAttributeName("static")]
         public bool TooltipStatic { get; set; }

@@ -17,10 +17,10 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class TabsNavTagHelper : TagHelper
     {
         [HtmlAttributeName("id")]
-        public string TabId { get; set; } = "";
+        public string TabId { get; set; }=  string.Empty;
 
         [HtmlAttributeName("class")]
-        public string TabClass { get; set; } = "";
+        public string TabClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

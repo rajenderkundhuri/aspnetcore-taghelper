@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class DropDownMenuHeaderTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string DropDownMenuHeader { get; set; } = "";
+        public string DropDownMenuHeader { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

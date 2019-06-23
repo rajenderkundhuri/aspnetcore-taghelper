@@ -20,7 +20,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public bool Active { get; set; }
 
         [HtmlAttributeName("class")]
-        public string Class { get; set; } = "";
+        public string Class { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

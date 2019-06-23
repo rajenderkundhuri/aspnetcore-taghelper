@@ -20,7 +20,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public bool CarouselItemActive { get; set; }
 
         [HtmlAttributeName("class")]
-        public string CarouselItemClass { get; set; } = "";
+        public string CarouselItemClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

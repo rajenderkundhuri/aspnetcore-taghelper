@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class CarouselCaptionTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string CarouselCaptionClass { get; set; } = "";
+        public string CarouselCaptionClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

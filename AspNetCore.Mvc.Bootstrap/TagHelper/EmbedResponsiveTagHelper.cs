@@ -23,7 +23,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public string embedType { get; set; } = "16by9";
 
         [HtmlAttributeName("class")]
-        public string EmbedClass { get; set; } = "";
+        public string EmbedClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

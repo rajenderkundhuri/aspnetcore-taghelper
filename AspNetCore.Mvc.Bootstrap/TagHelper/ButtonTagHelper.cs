@@ -21,7 +21,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public string ButtonElement { get; set; } = "button";
 
         [HtmlAttributeName("id")]
-        public string ButtonId { get; set; } = "";
+        public string ButtonId { get; set; }=  string.Empty;
 
         [HtmlAttributeName("autocomplete")]
         public string ButtonAutocomplete { get; set; } = "off";
@@ -51,7 +51,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public bool ButtonBlock { get; set; }
 
         [HtmlAttributeName("value")]
-        public string ButtonValue { get; set; } = "";
+        public string ButtonValue { get; set; }=  string.Empty;
 
         [HtmlAttributeName("link")]
         public string ButtonLink { get; set; } = "#";
@@ -93,7 +93,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         "extrasmall"
             };
             string str2 = "btn-default";
-            string str3 = "";
+            string str3=  string.Empty;
             if (Array.IndexOf<string>(array1, this.ButtonElement) == -1)
                 throw new ArgumentException("Invalid element! Please, use one of the following HTML elements - 'a', 'button' or 'input'");
             if (Array.IndexOf<string>(array2, this.ButtonType) == -1)

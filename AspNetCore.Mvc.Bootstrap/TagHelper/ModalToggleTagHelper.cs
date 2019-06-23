@@ -16,7 +16,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ModalToggleTagHelper : TagHelper
     {
         [HtmlAttributeName("bs-toggle-modal")]
-        public string ToggleModal { get; set; } = "";
+        public string ToggleModal { get; set; }=  string.Empty;
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {

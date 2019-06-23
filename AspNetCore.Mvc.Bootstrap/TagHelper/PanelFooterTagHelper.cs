@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class PanelFooterTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string PanelFooterClass { get; set; } = "";
+        public string PanelFooterClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class PaginationTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string PaginationClass { get; set; } = "";
+        public string PaginationClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("type")]
         public string PaginationType { get; set; } = "pagination";

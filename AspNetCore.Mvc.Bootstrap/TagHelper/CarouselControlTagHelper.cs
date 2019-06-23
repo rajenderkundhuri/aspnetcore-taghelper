@@ -23,10 +23,10 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
         public string CollapseCarouselSlide { get; set; } = "next";
 
         [HtmlAttributeName("class")]
-        public string CarouselControlClass { get; set; } = "";
+        public string CarouselControlClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("target")]
-        public string CollapseCarouselTarget { get; set; } = "";
+        public string CollapseCarouselTarget { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

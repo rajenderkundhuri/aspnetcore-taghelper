@@ -17,10 +17,10 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ThumbnailTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ThumbnailClass { get; set; } = "";
+        public string ThumbnailClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("href")]
-        public string ThumbnailHref { get; set; } = "";
+        public string ThumbnailHref { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

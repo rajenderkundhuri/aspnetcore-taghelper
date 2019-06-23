@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class AlertTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string AlertClass { get; set; } = "";
+        public string AlertClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

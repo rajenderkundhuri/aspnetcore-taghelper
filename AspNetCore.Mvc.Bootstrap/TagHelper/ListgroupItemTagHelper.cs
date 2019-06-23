@@ -17,13 +17,13 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ListgroupItemTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ListGroupItemClass { get; set; } = "";
+        public string ListGroupItemClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("type")]
-        public string ItemType { get; set; } = "";
+        public string ItemType { get; set; }=  string.Empty;
 
         [HtmlAttributeName("href")]
-        public string ItemHref { get; set; } = "";
+        public string ItemHref { get; set; }=  string.Empty;
 
         [HtmlAttributeName("class")]
         public string ItemTarget { get; set; } = "_self";

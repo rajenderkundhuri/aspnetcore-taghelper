@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class NavBarCoTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string NavBarCollapseClass { get; set; } = "";
+        public string NavBarCollapseClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ListgroupTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ListGroupClass { get; set; } = "";
+        public string ListGroupClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ProgressTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string ProgressClass { get; set; } = "";
+        public string ProgressClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

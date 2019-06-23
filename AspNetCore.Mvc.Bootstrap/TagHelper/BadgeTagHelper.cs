@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class BadgeTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string BadgeClass { get; set; } = "";
+        public string BadgeClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

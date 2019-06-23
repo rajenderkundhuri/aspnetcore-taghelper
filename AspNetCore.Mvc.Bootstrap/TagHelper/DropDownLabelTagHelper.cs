@@ -16,16 +16,16 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class DropDownLabelTagHelper : TagHelper
     {
         [HtmlAttributeName("id")]
-        public string DropDownLabelId { get; set; } = "";
+        public string DropDownLabelId { get; set; }=  string.Empty;
 
         [HtmlAttributeName("type")]
         public string DropDownLabelType { get; set; } = "button";
 
         [HtmlAttributeName("class")]
-        public string DropDownLabelClass { get; set; } = "";
+        public string DropDownLabelClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("content")]
-        public string DropDownLabelContent { get; set; } = "";
+        public string DropDownLabelContent { get; set; }=  string.Empty;
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {

@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class InputGroupTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string InputGroupClass { get; set; } = "";
+        public string InputGroupClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

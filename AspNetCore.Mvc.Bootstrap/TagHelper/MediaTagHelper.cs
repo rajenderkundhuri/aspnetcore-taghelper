@@ -17,7 +17,7 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class MediaTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string MediaClass { get; set; } = "";
+        public string MediaClass { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

@@ -17,19 +17,19 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class ModalTagHelper : TagHelper
     {
         [HtmlAttributeName("id")]
-        public string ModalId { get; set; } = "";
+        public string ModalId { get; set; }=  string.Empty;
 
         [HtmlAttributeName("size")]
-        public string ModalSize { get; set; } = "";
+        public string ModalSize { get; set; }=  string.Empty;
 
         [HtmlAttributeName("class")]
-        public string ModalClass { get; set; } = "";
+        public string ModalClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("role")]
-        public string Role { get; set; } = "";
+        public string Role { get; set; }=  string.Empty;
 
         [HtmlAttributeName("tabindex")]
-        public string TabIndex { get; set; } = "";
+        public string TabIndex { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

@@ -17,10 +17,10 @@ namespace AspNetCore.Mvc.Bootstrap.TagHelpers
     public class InputGroupAddonTagHelper : TagHelper
     {
         [HtmlAttributeName("class")]
-        public string InputGroupAddonClass { get; set; } = "";
+        public string InputGroupAddonClass { get; set; }=  string.Empty;
 
         [HtmlAttributeName("type")]
-        public string InputGroupAddonType { get; set; } = "";
+        public string InputGroupAddonType { get; set; }=  string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
